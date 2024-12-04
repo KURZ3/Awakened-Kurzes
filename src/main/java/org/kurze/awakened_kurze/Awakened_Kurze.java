@@ -30,8 +30,8 @@ import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(Awakened_kurze.MODID)
-public class Awakened_kurze {
+@Mod(Awakened_Kurze.MODID)
+public class Awakened_Kurze {
 
     // Define mod id in a common place for everything to reference
     public static final String MODID = "awakened_kurze";
@@ -57,7 +57,7 @@ public class Awakened_kurze {
         output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
     }).build());
 
-    public Awakened_kurze() {
+    public Awakened_Kurze() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         // Register the commonSetup method for modloading
