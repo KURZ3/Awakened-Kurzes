@@ -18,6 +18,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.kurze.awakened_kurzes.block.ModBlocks;
+import org.kurze.awakened_kurzes.item.ModCreativeModeTabs;
 import org.kurze.awakened_kurzes.item.ModItems;
 import org.slf4j.Logger;
 
@@ -38,6 +39,7 @@ public class Awakened_Kurzes {
 
         ModBlocks.register(modEventBus); // REGISTER MOD BLOCKS
         ModItems.register(modEventBus); // REGISTER MOD ITEMS
+        ModCreativeModeTabs.register(modEventBus); //REGISTER CUSTOM MOD TAB LOL
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
