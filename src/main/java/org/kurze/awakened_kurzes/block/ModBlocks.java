@@ -29,7 +29,9 @@ public class ModBlocks {
             ()-> new DropExperienceBlock(UniformInt.of(4, 8), BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
 
-
+    public static final RegistryObject<Block> KURZARITE_BLOCK = registerBlock("kurzarite_block",
+            ()-> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
 
     /*public static final RegistryObject<Block> KURZARITE_ORE = registerBlock("kurzarite_ore",
             ()-> new Block(BlockBehaviour.Properties.of()

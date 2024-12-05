@@ -26,6 +26,7 @@ public class ModCreativeModeTabs {
                         //Custom Blocks------------
                         output.accept(ModBlocks.KURZARITE_ORE.get());
                         output.accept(ModBlocks.KURZARITE_DEEPSLATEORE.get());
+                        output.accept(ModBlocks.KURZARITE_BLOCK.get());
                     })
                     .build());
 
