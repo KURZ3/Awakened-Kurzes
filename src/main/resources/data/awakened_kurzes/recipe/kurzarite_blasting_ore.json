@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "kurzarite",
+  "ingredient": {
+    "item": "awakened_kurzes:kurzarite_ore"
+  },
+  "result": {
+    "id": "awakened_kurzes:kurzarite_cluster"
+  }
+}
