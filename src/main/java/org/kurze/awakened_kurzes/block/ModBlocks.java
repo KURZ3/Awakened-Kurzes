@@ -1,8 +1,10 @@
 package org.kurze.awakened_kurzes.block;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,15 +22,19 @@ public class ModBlocks {
     //-----------------------BLOCKS---------------------------------------------------------------------
 
     public static final RegistryObject<Block> KURZARITE_ORE = registerBlock("kurzarite_ore",
-            ()-> new Block(BlockBehaviour.Properties.of()
+            ()-> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
 
     public static final RegistryObject<Block> KURZARITE_DEEPSLATEORE = registerBlock("kurzarite_deepslateore",
+            ()-> new DropExperienceBlock(UniformInt.of(4, 8), BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+
+
+
+    /*public static final RegistryObject<Block> KURZARITE_ORE = registerBlock("kurzarite_ore",
             ()-> new Block(BlockBehaviour.Properties.of()
-                    .strength(6f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
-
-
-
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+    */
     //-----------------------REGISTROS EXTRAÑOS DE BLOQUE E ITEM---------------------------------------------------------------------
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block){
