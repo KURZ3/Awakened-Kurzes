@@ -1,3 +1,6 @@
 {
-  "item.awakened_kurzes.kurzarite_cluster": "Kurzarite Cluster"
+  "item.awakened_kurzes.kurzarite_cluster": "Kurzarite Cluster",
+
+  "block.awakened_kurzes.kurzarite_ore": "Kurzarite Ore",
+  "block.awakened_kurzes.kurzarite_deepslateore": "Kurzarite Deepslate Ore"
 }

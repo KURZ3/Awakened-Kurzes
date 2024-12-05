@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "awakened_kurzes:block/kurzarite_ore"
+  }
+}

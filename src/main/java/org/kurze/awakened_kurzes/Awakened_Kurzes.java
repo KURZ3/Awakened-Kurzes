@@ -17,6 +17,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import org.kurze.awakened_kurzes.block.ModBlocks;
 import org.kurze.awakened_kurzes.item.ModItems;
 import org.slf4j.Logger;
 
@@ -28,16 +29,14 @@ public class Awakened_Kurzes {
     public static final String MODID = "awakened_kurzes";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
-    // Create a Deferred Register to hold Blocks which will all be registered under the "awakened_kurzes" namespace
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
-    
+
     //-----------------------LISTA DE REGISTROS---------------------------------------------------------------------
     public Awakened_Kurzes() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         modEventBus.addListener(this::commonSetup); // TELLS FORGE TO REGISTER THE MOD
 
-        BLOCKS.register(modEventBus); // REGISTER MOD BLOCKS
+        ModBlocks.register(modEventBus); // REGISTER MOD BLOCKS
         ModItems.register(modEventBus); // REGISTER MOD ITEMS
 
         // Register ourselves for server and other game events we are interested in
