@@ -12,7 +12,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, Awakened_Kurzes.MODID);
     //-----------------------ITEMS---------------------------------------------------------------------
 
-    public static final RegistryObject<Item> KURZARITE = ITEMS.register("kurzarite",
+    public static final RegistryObject<Item> KURZARITE_CLUSTER = ITEMS.register("kurzarite_cluster.json",
             ()->new Item(new Item.Properties()));
 
     //-----------------------EVENT BUS---------------------------------------------------------------------
