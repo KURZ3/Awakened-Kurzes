@@ -19,7 +19,11 @@ public class ModCreativeModeTabs {
             ()-> CreativeModeTab.builder().icon(()->new ItemStack(ModItems.KURZARITE_CLUSTER.get()))
                     .title(Component.translatable("creativetab.awakened_kurzes.kurzarite"))
                     .displayItems((itemDisplayParameters, output) -> { //Aqui se meten los items
+                        //Items-------------------
                         output.accept(ModItems.KURZARITE_CLUSTER.get());
+                        //Custom Items------------
+                        output.accept(ModItems.CHISEL.get());
+                        //Custom Blocks------------
                         output.accept(ModBlocks.KURZARITE_ORE.get());
                         output.accept(ModBlocks.KURZARITE_DEEPSLATEORE.get());
                     })
